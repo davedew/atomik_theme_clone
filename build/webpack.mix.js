@@ -32,8 +32,10 @@ mix.webpackConfig({
 })
 
 mix
-    .sass('../themes/atomik_clone/css/presets/default/main.scss', 'css/skins/default.css')
-    .sass('../themes/atomik_clone/css/presets/rustic-elegance/main.scss', 'css/skins/rustic-elegance.css')
+    // .sass('../themes/atomik_clone/css/presets/default/main.scss', 'css/skins/default.css')
+    // .sass('../themes/atomik_clone/css/presets/rustic-elegance/main.scss', 'css/skins/rustic-elegance.css')
+    .sass('assets/scss/presets/default/main.scss', 'css/skins/default.css')
+    .sass('assets/scss/presets/rustic-elegance/main.scss', 'css/skins/rustic-elegance.css')
     .js('assets/js/main.js', '').vue();
 
 mix.options({
