@@ -18,7 +18,7 @@ Proceed to install the package in Concrete's Dashboard > Extend Concrete page.
 
 ## Use / Editing JS and CSS
 
-When making changes to the JavaScript, make your changes in the build/assets/js/main.js file.  For SCSS make edits in the themes/atomik_clone/css/scss folder.  Rebuild the JS and CSS files in the package by using your terminal, in the build folder with **npx mix** or **npx mix --production** for minified versions. 
+When making changes to the JavaScript, make your changes in the *[build/assets/js/main.js](build/assets/js/main.js)* file.  For SCSS make edits in the *[build/assets/scss](build/assets/scss)* folder.  The main scss file if found at *[build/assets/scss/presets/default/main.scss](build/assets/scss/presets/default/main.scss)*. Rebuild the JS and CSS files in the package by using your terminal, in the build folder with **npx mix** or **npx mix --production** for minified versions. 
 
 ---
 
