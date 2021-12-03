@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <concrete5-cif version="1.0">
+    <themes>
+        <theme handle="atomik_clone" package="atomik_theme_clone" />
+    </themes>
     <thumbnailtypes>
         <thumbnailtype name="Resource List Entry" handle="resource_list_entry" sizingMode="proportional" width="510" height="510" />
         <thumbnailtype name="Testimonial Circle" handle="testimonial_circle" sizingMode="exact" width="180" height="180" />
@@ -9,7 +12,7 @@
     </thumbnailtypes>
     <summarytemplates>
         <template handle="blog_image_left" name="Blog Image Left"
-                  icon="blank.png" package="">
+                  icon="blank.png" package="atomik_theme_clone">
             <categories>
                 <category handle="page"/>
             </categories>
@@ -21,7 +24,7 @@
             </fields>
         </template>
         <template handle="blog_image_right" name="Blog Image Right"
-                  icon="blank.png" package="">
+                  icon="blank.png" package="atomik_theme_clone">
             <categories>
                 <category handle="page"/>
             </categories>
@@ -34,7 +37,7 @@
             </fields>
         </template>
         <template handle="blog_image_top" name="Blog Image Top"
-                  icon="blank.png" package="">
+                  icon="blank.png" package="atomik_theme_clone">
             <categories>
                 <category handle="page"/>
             </categories>
@@ -47,7 +50,7 @@
             </fields>
         </template>
         <template handle="blog_entry_card" name="Blog Entry Card"
-                  icon="blank.png" package="">
+                  icon="blank.png" package="atomik_theme_clone">
             <categories>
                 <category handle="page"/>
             </categories>
@@ -60,7 +63,7 @@
             </fields>
         </template>
         <template handle="resource_page" name="Resource Page Entry"
-                  icon="blank.png" package="">
+                  icon="blank.png" package="atomik_theme_clone">
             <categories>
                 <category handle="page"/>
             </categories>

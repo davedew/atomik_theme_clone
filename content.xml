@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <concrete5-cif version="1.0">
     <themes>
-        <theme handle="atomik_clone" package="" activated="1"/>
+        <theme handle="atomik_clone" package="atomik_theme_clone" activated="1"/>
     </themes>
     <boards>
-        <board name="Blog" template="blog" package="" uses-custom-template-subset="1"
+        <board name="Blog" template="blog" package="atomik_theme_clone" uses-custom-template-subset="1"
                sort="relevant_date_desc">
             <datasources>
                 <datasource source="page" weight="0" name="Blog" day-interval-future="60" day-interval-past="356">
@@ -26,34 +26,34 @@
         </board>
     </boards>
     <pagetemplates>
-        <pagetemplate handle="full" name="Full" icon="full.png" package=""/>
-        <pagetemplate icon="left_sidebar.png" name="Left Sidebar" handle="left_sidebar" package="" internal=""/>
-        <pagetemplate icon="right_sidebar.png" name="Right Sidebar" handle="right_sidebar" package="" internal=""/>
-        <pagetemplate icon="two_column.png" name="Resource Detail" handle="resource_detail" package="" internal=""/>
+        <pagetemplate handle="full" name="Full" icon="full.png" package="atomik_theme_clone"/>
+        <pagetemplate icon="left_sidebar.png" name="Left Sidebar" handle="left_sidebar" package="atomik_theme_clone" internal=""/>
+        <pagetemplate icon="right_sidebar.png" name="Right Sidebar" handle="right_sidebar" package="atomik_theme_clone" internal=""/>
+        <pagetemplate icon="two_column.png" name="Resource Detail" handle="resource_detail" package="atomik_theme_clone" internal=""/>
     </pagetemplates>
     <boardtemplates>
         <template handle="blog" name="Blog"
-                  icon="blank.png" package="">
+                  icon="blank.png" package="atomik_theme_clone">
         </template>
     </boardtemplates>
     <boardslottemplates>
         <template handle="blog_image_left" name="Blog Image Left"
-                  icon="blank.png" package="">
+                  icon="blank.png" package="atomik_theme_clone">
         </template>
         <template handle="blog_image_right" name="Blog Image Right"
-                  icon="blank.png" package="">
+                  icon="blank.png" package="atomik_theme_clone">
         </template>
         <template handle="blog_two_up" name="Blog Two Up"
-                  icon="blank.png" package="">
+                  icon="blank.png" package="atomik_theme_clone">
         </template>
         <template handle="blog_three_up" name="Blog Three Up"
-                  icon="blank.png" package="">
+                  icon="blank.png" package="atomik_theme_clone">
         </template>
     </boardslottemplates>
     <pagetypes>
         <pagetype name="Page" handle="page" is-frequently-added="1" launch-in-composer="0">
             <pagetemplates type="all" default="full"/>
-            <target handle="all" package=""/>
+            <target handle="all" package="atomik_theme_clone"/>
             <composer>
                 <formlayout>
                     <set name="Basics">
@@ -84,11 +84,11 @@
                 </output>
             </composer>
         </pagetype>
-        <pagetype name="Blog Entry" handle="blog_entry" is-frequently-added="1" package="" launch-in-composer="1">
+        <pagetype name="Blog Entry" handle="blog_entry" is-frequently-added="1" package="atomik_theme_clone" launch-in-composer="1">
             <pagetemplates type="custom" default="right_sidebar">
                 <pagetemplate handle="right_sidebar"/>
             </pagetemplates>
-            <target handle="page_type" package="" pagetype="blog"/>
+            <target handle="page_type" package="atomik_theme_clone" pagetype="blog"/>
             <composer>
                 <formlayout>
                     <set name="Post Details">
@@ -109,7 +109,7 @@
                 <output>
                     <pagetemplate handle="right_sidebar">
                         <page name="" path="" filename="" pagetype="blog_entry" template="right_sidebar" user="admin"
-                              description="" package="">
+                              description="" package="atomik_theme_clone">
                             <area name="Page Header">
                                 <blocks>
                                     <block type="breadcrumbs" name="" mc-block-id="auf8nvkdiz">
@@ -242,11 +242,11 @@
                 </output>
             </composer>
         </pagetype>
-        <pagetype name="Blog" handle="blog" package="" launch-in-composer="1">
+        <pagetype name="Blog" handle="blog" package="atomik_theme_clone" launch-in-composer="1">
             <pagetemplates type="custom" default="full">
                 <pagetemplate handle="full"/>
             </pagetemplates>
-            <target handle="all" package=""/>
+            <target handle="all" package="atomik_theme_clone"/>
             <composer>
                 <formlayout>
                     <set name="Details">
@@ -256,11 +256,11 @@
                 </formlayout>
             </composer>
         </pagetype>
-        <pagetype name="Resource" handle="resource" package="" launch-in-composer="1" is-frequently-added="1">
+        <pagetype name="Resource" handle="resource" package="atomik_theme_clone" launch-in-composer="1" is-frequently-added="1">
             <pagetemplates type="custom" default="resource_detail">
                 <pagetemplate handle="resource_detail"/>
             </pagetemplates>
-            <target handle="parent_page" package="" path="/resources"/>
+            <target handle="parent_page" package="atomik_theme_clone" path="/resources"/>
             <composer>
                 <formlayout>
                     <set name="" description="">
@@ -279,7 +279,7 @@
                 <output>
                     <pagetemplate handle="resource_detail">
                         <page name="" path="" public-date="2021-08-28 07:31:35" filename="" pagetype="resource"
-                              template="resource_detail" user="admin" description="" package="" root="true">
+                              template="resource_detail" user="admin" description="" package="atomik_theme_clone" root="true">
                             <area name="Page Header">
                                 <blocks>
                                     <block type="breadcrumbs" name="" mc-block-id="bf3d4ccc">
@@ -357,7 +357,7 @@
                 description="" default_view_form="02e860ae-0518-11ec-bb64-2d8e40952e25"
                 default_edit_form="02e860ae-0518-11ec-bb64-2d8e40952e25" results-folder="/Forms">
             <attributekeys>
-                <attributekey handle="email_address" name="Email Address" package="" searchable="1" indexed="1"
+                <attributekey handle="email_address" name="Email Address" package="atomik_theme_clone" searchable="1" indexed="1"
                               type="email" category=""/>
             </attributekeys>
             <forms>
@@ -379,17 +379,17 @@
                 include_in_public_list="" description="" default_view_form="881b6bde-220f-4482-b8f9-ace40b5d169b"
                 default_edit_form="881b6bde-220f-4482-b8f9-ace40b5d169b" results-folder="/Forms">
             <attributekeys>
-                <attributekey handle="contact_question_first_name" name="First Name" package="" searchable="1"
+                <attributekey handle="contact_question_first_name" name="First Name" package="atomik_theme_clone" searchable="1"
                               indexed="1" type="text" category="">
                     <type placeholder=""/>
                 </attributekey>
-                <attributekey handle="contact_question_last_name" name="Last Name" package="" searchable="1" indexed="1"
+                <attributekey handle="contact_question_last_name" name="Last Name" package="atomik_theme_clone" searchable="1" indexed="1"
                               type="text" category="">
                     <type placeholder=""/>
                 </attributekey>
-                <attributekey handle="contact_question_email_address" name="Email Address" package="" searchable="1"
+                <attributekey handle="contact_question_email_address" name="Email Address" package="atomik_theme_clone" searchable="1"
                               indexed="1" type="email" category=""/>
-                <attributekey handle="contact_question_subject" name="Subject" package="" searchable="1" indexed="1"
+                <attributekey handle="contact_question_subject" name="Subject" package="atomik_theme_clone" searchable="1" indexed="1"
                               type="select" category="">
                     <type allow-multiple-values="" display-order="display_asc" display-multiple-values="1"
                           allow-other-values="" hide-none-option="">
@@ -401,7 +401,7 @@
                         </options>
                     </type>
                 </attributekey>
-                <attributekey handle="contact_question_message" name="Message" package="" searchable="1" indexed="1"
+                <attributekey handle="contact_question_message" name="Message" package="atomik_theme_clone" searchable="1" indexed="1"
                               type="textarea" category="">
                     <type mode="text"/>
                 </attributekey>
@@ -446,37 +446,37 @@
     </expressentities>
     <containers>
         <container handle="light_stripe" name="Light Stripe"
-                   icon="full.png" package=""/>
+                   icon="full.png" package="atomik_theme_clone"/>
         <container handle="two_column_light" name="Two Column Light"
-                   icon="two_column.png" package=""/>
+                   icon="two_column.png" package="atomik_theme_clone"/>
         <container handle="two_column_condensed" name="Two Column Condensed"
-                   icon="two_column.png" package=""/>
+                   icon="two_column.png" package="atomik_theme_clone"/>
         <container handle="grid_four" name="Responsive Grid of Four"
-                   icon="blank.png" package=""/>
+                   icon="blank.png" package="atomik_theme_clone"/>
         <container handle="grid_six" name="Responsive Grid of Six"
-                   icon="blank.png" package=""/>
+                   icon="blank.png" package="atomik_theme_clone"/>
     </containers>
     <attributekeys>
-        <attributekey handle="blog_entry_topics" name="Blog Entry Topics" package="" searchable="1" indexed="1"
+        <attributekey handle="blog_entry_topics" name="Blog Entry Topics" package="atomik_theme_clone" searchable="1" indexed="1"
                       type="topics" category="collection">
             <tree name="Blog Entries" path="/"/>
         </attributekey>
-        <attributekey handle="thumbnail" name="Thumbnail" package="" searchable="1" indexed="1" type="image_file"
+        <attributekey handle="thumbnail" name="Thumbnail" package="atomik_theme_clone" searchable="1" indexed="1" type="image_file"
                       category="collection"/>
-        <attributekey handle="exclude_subpages_from_nav" name="Exclude Sub-Pages From Nav" package="" searchable="1"
+        <attributekey handle="exclude_subpages_from_nav" name="Exclude Sub-Pages From Nav" package="atomik_theme_clone" searchable="1"
                       indexed="1" type="boolean" category="collection">
             <type checked="0"/>
         </attributekey>
     </attributekeys>
     <attributesets>
-        <attributeset handle="blog" name="Blog" package="" locked="0" category="collection">
+        <attributeset handle="blog" name="Blog" package="atomik_theme_clone" locked="0" category="collection">
             <attributekey handle="blog_entry_topics"/>
         </attributeset>
     </attributesets>
 
     <pages>
         <page name="Home" path="" public-date="2021-08-20 15:36:55" filename="" pagetype="page" template="full"
-              user="admin" description="" package="" root="true">
+              user="admin" description="" package="atomik_theme_clone" root="true">
             <area name="Page Header">
                 <blocks>
                     <block type="hero_image" name="">
@@ -992,7 +992,7 @@ Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.</p>
             </area>
         </page>
         <page name="About" path="/about" public-date="2021-08-18 16:20:23" filename="" pagetype="page" template="full"
-              user="admin" description="" package="">
+              user="admin" description="" package="atomik_theme_clone">
             <area name="Main">
                 <blocks>
                     <block type="image_slider" name="" custom-template="hero_slider.php">
@@ -1448,7 +1448,7 @@ Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.</p>
             </area>
         </page>
         <page name="Services" path="/about/services" public-date="2021-08-18 16:20:35" filename="" pagetype="page"
-              template="full" user="admin" description="" package="">
+              template="full" user="admin" description="" package="atomik_theme_clone">
             <area name="Page Header">
                 <blocks>
                     <block type="hero_image" name="">
@@ -1709,7 +1709,7 @@ Maecenas consequat lectus a euismod pellentesque. Pellentesque commodo quam nec 
             </area>
         </page>
         <page name="Blog" path="/about/blog" public-date="2021-07-31 16:20:28" filename="" pagetype="blog"
-              template="full" user="admin" description="" package="">
+              template="full" user="admin" description="" package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="exclude_subpages_from_nav">
                     <value><![CDATA[1]]></value>
@@ -1809,7 +1809,7 @@ Maecenas consequat lectus a euismod pellentesque. Pellentesque commodo quam nec 
             </area>
         </page>
         <page name="FAQ" path="/about/faq" filename="" pagetype="page" template="full"
-              user="admin" description="" package="">
+              user="admin" description="" package="atomik_theme_clone">
             <area name="Main">
                 <blocks>
                     <block type="page_title" name="">
@@ -1850,7 +1850,7 @@ Maecenas consequat lectus a euismod pellentesque. Pellentesque commodo quam nec 
             </area>
         </page>
         <page name="Contact Us" path="/about/contact" public-date="2021-08-18 16:20:35" filename="" pagetype="page"
-              template="full" user="admin" description="" package="">
+              template="full" user="admin" description="" package="atomik_theme_clone">
             <area name="Page Header">
                 <blocks>
                     <block type="hero_image" name="">
@@ -1950,7 +1950,7 @@ Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.</p>
             </area>
         </page>
         <page name="Resources" path="/resources" public-date="2021-08-18 16:20:40" filename="" pagetype="page"
-              template="full" user="admin" description="" package="">
+              template="full" user="admin" description="" package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="exclude_subpages_from_nav">
                     <value>1</value>
@@ -2026,7 +2026,7 @@ Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.</p>
               path="/about/blog/tips-build-beautiful-blog" filename=""
               pagetype="blog_entry" template="right_sidebar" user="admin"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
-              package="">
+              package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="thumbnail">
                     <value>
@@ -2092,7 +2092,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
               filename=""
               pagetype="blog_entry" template="right_sidebar" user="admin"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
-              package="">
+              package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="thumbnail">
                     <value>
@@ -2158,7 +2158,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
               filename=""
               pagetype="blog_entry" template="right_sidebar" user="admin"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
-              package="">
+              package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="thumbnail">
                     <value>
@@ -2224,7 +2224,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
               path="/about/blog/heres-tip-you-might-not-know" filename=""
               pagetype="blog_entry" template="right_sidebar" user="admin"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
-              package="">
+              package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="thumbnail">
                     <value>
@@ -2290,7 +2290,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
               path="/about/blog/freshen-up-your-website" filename=""
               pagetype="blog_entry" template="right_sidebar" user="admin"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
-              package="">
+              package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="thumbnail">
                     <value>
@@ -2356,7 +2356,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
               filename=""
               pagetype="blog_entry" template="right_sidebar" user="admin"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
-              package="">
+              package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="thumbnail">
                     <value>
@@ -2419,7 +2419,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
             </area>
         </page>
         <page name="Documents" path="/documents" public-date="2021-08-18 16:20:35" filename="" pagetype="page"
-              template="full" user="admin" description="" package="">
+              template="full" user="admin" description="" package="atomik_theme_clone">
             <area name="Page Header">
                 <blocks>
                     <block type="hero_image" name="">
@@ -2484,7 +2484,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
         </page>
 
         <page name="Thanks for Subscribing" path="/subscribe-thanks" public-date="2021-08-24 13:16:00" filename=""
-              pagetype="page" template="full" user="admin" description="" package="">
+              pagetype="page" template="full" user="admin" description="" package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="exclude_nav">
                     <value>1</value>
@@ -2514,7 +2514,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
             </area>
         </page>
         <page name="Search" path="/search" public-date="2021-08-24 13:16:00" filename="" pagetype="page" template="full"
-              user="admin" description="" package="">
+              user="admin" description="" package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="exclude_nav">
                     <value>1</value>
@@ -2569,7 +2569,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
             </area>
         </page>
         <page name="Blog Search" path="/blog-search" public-date="2021-09-06 15:02:43" filename="" pagetype="page"
-              template="full" user="admin" description="" package="">
+              template="full" user="admin" description="" package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="exclude_nav">
                     <value>1</value>
@@ -2653,7 +2653,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
         <page name="Resource One" path="/resources/resource-one" public-date="2021-08-28 07:49:00" filename=""
               pagetype="resource" template="resource_detail" user="admin"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. "
-              package="">
+              package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="tags">
                     <value>
@@ -2730,7 +2730,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
         <page name="Resource Two" path="/resources/resource-two" public-date="2021-08-27 07:49:00" filename=""
               pagetype="resource" template="resource_detail" user="admin"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. "
-              package="">
+              package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="tags">
                     <value>
@@ -2778,7 +2778,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
         <page name="Resource Three" path="/resources/resource-three" public-date="2021-08-26 07:49:00" filename=""
               pagetype="resource" template="resource_detail" user="admin"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. "
-              package="">
+              package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="tags">
                     <value>
@@ -2826,7 +2826,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
         <page name="Resource Four" path="/resources/resource-four" public-date="2021-08-25 07:49:00" filename=""
               pagetype="resource" template="resource_detail" user="admin"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. "
-              package="">
+              package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="tags">
                     <value>
@@ -2874,7 +2874,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
         <page name="Resource Five" path="/resources/resource-five" public-date="2021-08-24 07:49:00" filename=""
               pagetype="resource" template="resource_detail" user="admin"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. "
-              package="">
+              package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="tags">
                     <value>
@@ -2922,7 +2922,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
         <page name="Resource Six" path="/resources/resource-six" public-date="2021-08-23 07:49:00" filename=""
               pagetype="resource" template="resource_detail" user="admin"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. "
-              package="">
+              package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="tags">
                     <value>
@@ -2968,7 +2968,7 @@ Nam massa mauris, euismod vel tortor vel, finibus accumsan sem. Sed varius vulpu
             </area>
         </page>
         <page name="Privacy Policy" path="/privacy-policy" public-date="2021-09-09 15:00:00" filename="" pagetype="page"
-              template="left_sidebar" user="admin" description="" package="">
+              template="left_sidebar" user="admin" description="" package="atomik_theme_clone">
             <attributes>
                 <attributekey handle="exclude_nav">
                     <value>1</value>
