@@ -16,9 +16,40 @@ Proceed to install the package in Concrete's Dashboard > Extend Concrete page.
 
 ---
 
+## Personalize for your project
+
+- Change the icon.png (97px x 97px) in the packages/atomik_theme_clone directory.
+- Change the thumbnail.png (360px x 270px) in the packages/atomik_theme_clone/themes/atomik_clone directory.
+- To change the name and descriptions, for my example below I want my theme to be named "**Rock Solid**":
+  -  **Directory names**
+     - packages/theme_rock_solid
+     - packages/theme_rock_solid/themes/rock_solid
+   - **Namespaces**
+     - **File:** packages/theme_rock_solid/controller.php
+       - namespace Concrete\Package\ThemeRockSolid;
+     - **File:** packages/theme_rock_solid/themes/rock_solid/page_theme.php
+       - namespace Concrete\Package\ThemeRockSolid\Theme\RockSolid;
+     - **File:** packages/theme_rock_solid/src/Concrete/AtomikCloneDocumentationProvider.php
+       - namespace Concrete\Package\ThemeRockSolid;
+       - use Concrete\Package\AtomikThemeClone\Theme\AtomikClone\PageTheme change to: 
+         - use Concrete\Package\ThemeRockSolid\Theme\RockSolid\PageTheme;
+   - **Names and Descriptions**
+     - **File:** packages/theme_rock_solid/controller.php
+       - protected $pkgHandle = 'theme_rock_solid';
+       - protected $themePath = 'themes/rock_solid/';
+       - protected $themeName = 'Rock Solid';
+       - protected $themeHandle = 'rock_solid';
+       - public function getPackageDescription: 
+     - **File:** packages/theme_rock_solid/themes/rock_solid/page_theme.php
+       - public function getThemeName()
+       - public function getThemeDescription()
+     - **File:** packages/theme_rock_solid/build/webpack.mix.js
+       - mix.setPublicPath('../themes/rock_solid');;
+---
+
 ## Use / Editing JS and CSS
 
-When making changes to the JavaScript, make your changes in the *[build/assets/js/main.js](build/assets/js/main.js)* file.  For SCSS make edits in the *[build/assets/scss](build/assets/scss)* folder.  The main scss file if found at *[build/assets/scss/presets/default/main.scss](build/assets/scss/presets/default/main.scss)*. Rebuild the JS and CSS files in the package by using your terminal, in the build folder with **npx mix** or **npx mix --production** for minified versions. 
+When making changes to the JavaScript, make your changes in the *[build/assets/js/main.js](build/assets/js/main.js)* file.  For SCSS make edits in the *[build/assets/scss](build/assets/scss)* folder.  The main scss file if found at *[build/assets/scss/presets/default/main.scss](build/assets/scss/presets/default/main.scss)*. Rebuild the JS and CSS files in the package by using your terminal, in the build folder with **npx mix** or **npx mix --production** for minified versions. These will generate the main.js and css files in your theme folder.
 
 ---
 
@@ -40,7 +71,7 @@ Remove the **package.json**, **package-lock.json** (if exists), and the **node_m
 
 I'm referencing Laravel Mix's docs here: [https://github.com/laravel-mix/laravel-mix/blob/master/docs/installation.md](https://github.com/laravel-mix/laravel-mix/blob/master/docs/installation.md)
 
-In the **build** folder do the following:
+In the **[build](build/)** folder do the following:
 
 1. npm init -y
 2. npm install laravel-mix --save-dev
