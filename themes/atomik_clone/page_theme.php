@@ -119,7 +119,7 @@ class PageTheme extends Theme
 
     public function getDocumentationProvider(): ?DocumentationProviderInterface
     {
-        return new AtomikDocumentationProvider($this);
+        return new AtomikCloneDocumentationProvider($this);
     }
 
     public function getColorCollection(): ?ColorCollection
