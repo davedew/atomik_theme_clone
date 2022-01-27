@@ -24,11 +24,13 @@ Proceed to install the package in Concrete's Dashboard > Extend Concrete page.
   -  **Directory names**
      - packages/theme_rock_solid
      - packages/theme_rock_solid/themes/rock_solid
-   - **Namespaces**
+   - **Namespaces & Use Statements**
      - **File:** packages/theme_rock_solid/controller.php
        - namespace Concrete\Package\ThemeRockSolid;
      - **File:** packages/theme_rock_solid/themes/rock_solid/page_theme.php
        - namespace Concrete\Package\ThemeRockSolid\Theme\RockSolid;
+       - use Concrete\Package\AtomikThemeClone\AtomikCloneDocumentationProvider change to: 
+         - use Concrete\Package\ThemeRockSolid\AtomikCloneDocumentationProvider;
      - **File:** packages/theme_rock_solid/src/Concrete/AtomikCloneDocumentationProvider.php
        - namespace Concrete\Package\ThemeRockSolid;
        - use Concrete\Package\AtomikThemeClone\Theme\AtomikClone\PageTheme change to: 
@@ -40,11 +42,16 @@ Proceed to install the package in Concrete's Dashboard > Extend Concrete page.
        - protected $themeName = 'Rock Solid';
        - protected $themeHandle = 'rock_solid';
        - public function getPackageDescription: 
+       - public function getEntityManagerProvider > Change the Concrete\Package\AtomikTheme to Concrete\Package\RockSolid
      - **File:** packages/theme_rock_solid/themes/rock_solid/page_theme.php
        - public function getThemeName()
        - public function getThemeDescription()
      - **File:** packages/theme_rock_solid/build/webpack.mix.js
-       - mix.setPublicPath('../themes/rock_solid');;
+       - mix.setPublicPath('../themes/rock_solid');
+   - **Other**
+     - **File:** packages/theme_rock_solid/content.xml
+       - Change the <theme handle="rock_solid">
+       - Change all references for package to look like this: package="theme_rock_solid"
 ---
 
 ## Use / Editing JS and CSS
