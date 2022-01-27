@@ -53,6 +53,11 @@ Proceed to install the package in Concrete's Dashboard > Extend Concrete page.
      - **File:** packages/theme_rock_solid/content.xml
        - Change the <theme handle="rock_solid">
        - Change all references for package to look like this: package="theme_rock_solid"
+     - **File:** packages/theme_rock_solid/themes.xml
+       - Change the <theme handle="rock_solid">
+       - Change all references for package to look like this: package="theme_rock_solid"
+     - **File:** packages/theme_rock_solid/controller.php
+       - public function install_config(): change the $themePaths atomik_clone to rock_solid
 ---
 
 ## Use / Editing JS and CSS
