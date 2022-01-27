@@ -48,6 +48,7 @@ Proceed to install the package in Concrete's Dashboard > Extend Concrete page.
        - public function getThemeDescription()
      - **File:** packages/theme_rock_solid/build/webpack.mix.js
        - mix.setPublicPath('../themes/rock_solid');
+       - mix.browserSync({proxy: 'rock-solid.test'}); change this to whatever your local URL is
    - **Other**
      - **File:** packages/theme_rock_solid/content.xml
        - Change the <theme handle="rock_solid">

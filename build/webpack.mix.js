@@ -26,6 +26,4 @@ mix.options({
 
 mix.setPublicPath('../themes/atomik_clone'); // Change this if you change your theme naming / file structure.
 
-mix.browserSync({
-    proxy: 'atomik-clone.test' // You need to change this to your local dev URL for npm run watch or npx mix watch
-});
+mix.browserSync({proxy: 'atomik-clone.test'}); // You need to change this to your local dev URL for npm run watch or npx mix watch
