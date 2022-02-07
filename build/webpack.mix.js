@@ -33,7 +33,7 @@ mix.options({
             ]
         }
     })
-    // Comment this next line out if you don't need an extra color option.  It just adds to the compile time.
+    // Comment this next sass definition out if you don't need an extra color option.  It just adds to the compile time.
     .sass('assets/scss/presets/rustic-elegance/main.scss', 'css/skins/rustic-elegance.css', {
         sassOptions: {
             includePaths: [
@@ -41,9 +41,6 @@ mix.options({
             ]
         }
     })
-    // .sass('assets/scss/presets/default/main.scss', 'css/skins/default.css')
-    // Comment this next line out if you don't need an extra color option.  It just adds to the compile time.
-    // .sass('assets/scss/presets/rustic-elegance/main.scss', 'css/skins/rustic-elegance.css')
     .js('assets/js/main.js', '')
     .browserSync({
         proxy: 'c59.test' // You need to change this to your local dev URL for npm run watch or npx mix watch
