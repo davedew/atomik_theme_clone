@@ -62,7 +62,7 @@ Proceed to install the package in Concrete's Dashboard > Extend Concrete page.
 
 ## Use / Editing JS and CSS
 
-When making changes to the JavaScript, make your changes in the *[build/assets/js/main.js](build/assets/js/main.js)* file.  For SCSS make edits in the *[build/assets/scss](build/assets/scss)* folder.  The main scss file if found at *[build/assets/scss/presets/default/main.scss](build/assets/scss/presets/default/main.scss)*. Rebuild the JS and CSS files in the package by using your terminal, in the build folder with **npx mix** or **npx mix --production** for minified versions. These will generate the main.js and css files in your theme folder.
+When making changes to the JavaScript, make your changes in the *[build/assets/js/main.js](build/assets/js/main.js)* file.  For SCSS make edits in the *[build/assets/scss](build/assets/scss)* folder.  The main scss file if found at *[build/assets/scss/presets/default/main.scss](build/assets/scss/presets/default/main.scss)*. Rebuild the JS and CSS files in the package by using your terminal, in the build folder with **npm run dev** or **npm run prod** for minified versions. These will generate the main.js and css files in your theme folder.
 
 ---
 
@@ -90,24 +90,24 @@ In the **[build](build/)** folder do the following:
 2. npm install laravel-mix --save-dev
 3. npm install @concretecms/bedrock
 4. Leave the webpack.mix.js and all other files alone, then run 
-5. npx mix
+5. npm run prod
 
 ---
 
-## Laravel Mix CLI:
+## CLI Commands:
 
-To build assets for development, reach for the `npx mix` command. Mix will then read your `webpack.mix.js` configuration file, and compile your assets.
+To build assets for development, reach for the `npm run dev` command. Mix will then read your `webpack.mix.js` configuration file, and compile your assets.
 
 ```
-npx mix
+npm run dev
 ```
 
 #### Watch Assets for Changes
 
-Particularly for larger projects, compilation can take a bit of time. For this reason, it's highly recommended that you instead leverage webpack's ability to watch your filesystem for changes. The `npx mix watch` command will handle this for you. Now, each time you update a file, Mix will automatically recompile the file and rebuild your bundle. 
+Particularly for larger projects, compilation can take a bit of time. For this reason, it's highly recommended that you instead leverage webpack's ability to watch your filesystem for changes. The `npm run watch` command will handle this for you. Now, each time you update a file, Mix will automatically recompile the file and rebuild your bundle. 
 
 ```
-npx mix watch
+npm run watch
 ```
 
 #### Polling
@@ -115,7 +115,7 @@ npx mix watch
 In certain situations, webpack may not automatically detect changes. An example of this is when you're on an NFS volume inside virtualbox. If this is a problem, pass the `--watch-options-poll` option directly to webpack-cli to turn on manual polling. 
  
  ```
- npx mix watch -- --watch-options-poll=1000
+npm run watch -- --watch-options-poll=1000
 ```
 
 Of course, you can add this to a build script within your `package.json` file.
@@ -125,7 +125,7 @@ Of course, you can add this to a build script within your `package.json` file.
 Hot module replacement is a webpack featured that gives supporting modules the ability to "live update" in certain situations. A live-update is when your application refreshes without requiring a page reload. In fact, this is what powers Vue's live updates when developing. To turn this feature on, include the `--hot` flag. 
 
 ```
-npx mix watch --hot
+npm run hot
 ```
 
 ### Compiling for Production
@@ -133,24 +133,5 @@ npx mix watch --hot
 When it comes time to build your assets for a production environment, Mix will set the appropriate webpack options, minify your source code, and optionally version your assets based on your Mix configuration file (`webpack.mix.js`). To build assets for production, include the `--production` flag - or the alias `-p` - to the Mix CLI. Mix will take care of the rest!
 
 ```
-npx mix --production
+npm run prod
 ```
-
-#### Customize the Mix Configuration Path
-
-You may customise the location of your `webpack.mix.js` file by using the `--mix-config` option. For example, if you wish to load your `webpack.mix.js` file from a nested `build` directory, here's how:
- 
- ```
- npx mix --mix-config=build/webpack.mix.js --production
-```
-
-### Pass Options to Webpack-CLI
-
-If you end any `mix` call with two dashes (`--`), anything after it will be passed through to webpack-cli. For example, you can pass environment variables using webpack-cli's `--env` option: 
-
-```
-npx mix -- --env foo=bar
-```
-
-
-
