@@ -1,3 +1,5 @@
+# Due to a career change I am no longer maintaining this repo.
+
 ## Description
 
 This is an attempt to copy the Atomik theme provided with the Concrete CMS installation in to it's own installable package for designers to modify as they would like.  
