@@ -32506,8 +32506,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/main": 0,
-/******/ 			"css/skins/rustic-elegance": 0,
-/******/ 			"css/skins/default": 0
+/******/ 			"css/skins/default": 0,
+/******/ 			"css/skins/rustic-elegance": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -32562,9 +32562,9 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/skins/rustic-elegance","css/skins/default"], () => (__webpack_require__("./assets/js/main.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/skins/rustic-elegance","css/skins/default"], () => (__webpack_require__("./assets/scss/presets/default/main.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/skins/rustic-elegance","css/skins/default"], () => (__webpack_require__("./assets/scss/presets/rustic-elegance/main.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/skins/default","css/skins/rustic-elegance"], () => (__webpack_require__("./assets/js/main.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/skins/default","css/skins/rustic-elegance"], () => (__webpack_require__("./assets/scss/presets/default/main.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/skins/default","css/skins/rustic-elegance"], () => (__webpack_require__("./assets/scss/presets/rustic-elegance/main.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
