@@ -1,4 +1,7 @@
-// Stock Atomik theme customizations (originally in _customizable-variables.scss)
+// Set up fonts
+@import "typography";
+
+// Stock Atomik theme customizations (combination of _variables.scss & _customizable-variables.scss)
 @import "variables"; 
 
 // Stock Atomik elements, common to all style presets

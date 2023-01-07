@@ -1,5 +1,8 @@
 // These are part of the stock Atomik theme and are probably too light 
 
+// -----------------------------------------------------------------
+// original _customizable-variables.css: 
+
 // Top Navigation Bar
 $top-navbar-bg: #f3f3f3 !default;
 
@@ -34,4 +37,36 @@ $theme-footer-color: #6B7075 !default;
 $theme-footer-link-color: #6B7075 !default;
 
 
+// -----------------------------------------------------------------
+// original _variables.css: 
 
+@import url(//fonts.googleapis.com/css?family=Montserrat:500);
+@import url(//fonts.googleapis.com/css?family=Bebas+Neue:400);
+@import url(//fonts.googleapis.com/css?family=Raleway:800);
+
+// Colors - Base Bootstrap
+$success: #04AF7A;
+$danger: #A32C0D;
+$warning: #F0B720;
+$info: #20BFF0;
+$dark: #373A3B;
+$gray-500: #979797;
+
+// Display Headings
+$display-font-family: "Bebas Neue" !default;
+$display-font-weight: 400 !default;
+$display-line-height: 1em;
+$display-font-sizes: (
+        1: 4rem,
+        2: 3.5rem,
+        3: 3rem,
+        4: 2rem
+);
+
+// Regular Headings
+$headings-font-family: "Raleway" !default;
+$headings-font-weight: 800 !default;
+
+// Links
+$link-color: $primary;
+$link-decoration: none;
