@@ -1,3 +1,13 @@
-@import "customizable-variables";
-@import "variables";
+// Stock Atomik theme customizations (originally in _customizable-variables.scss)
+@import "variables"; 
+
+// Stock Atomik elements, common to all style presets
 @import "../../common";
+
+// From Stock Bootstrap 5 _variables-dark.scss (all "-dark" prefixes removed)
+@import "_variables-dark-bootstrap5-stock.scss";
+
+// Variable overrides
+@import "customizable-variables";
+
+
