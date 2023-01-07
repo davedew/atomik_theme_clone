@@ -1,16 +1,21 @@
-// GRAY OVERRIDES: "Dark shall be as light"
+// GRAY OVERRIDES: "Darkness shall be as light, and light as darkness
 // scss-docs-start gray-color-variables
-$gray-100: #000 !default;
-$gray-200: #212529 !default;
-$gray-300: #343a40 !default;
-$gray-400: #495057 !default;
-$gray-500: #ced4da !default;
-$gray-600: #adb5bd !default;
-$gray-700: #ced4da !default;
-$gray-800: #dee2e6 !default;
-$gray-900: #e9ecef !default;
+$white:    #000 !default;
+$gray-100: #212529 !default;
+$gray-200: #343a40 !default;
+$gray-300: #495057 !default;
+$gray-400: #6c757d !default;
+$gray-500: #adb5bd !default;
+$gray-600: #ced4da !default;
+$gray-700: #dee2e6 !default;
+$gray-800: #e9ecef !default;
+$gray-900: #f8f9fa !default;
 $black:    #fff !default;
+
+
 // END GRAY OVERRIDE
+
+
 
 
 // These are part of the stock Atomik theme and are probably too light 
