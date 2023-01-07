@@ -11,41 +11,6 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-// REVERSE GRAYS: "Darkness shall be as light, and light as darkness
-// scss-docs-start gray-color-variables
-// $white:    #000 !default;
-// $gray-100: #212529 !default;
-// $gray-200: #343a40 !default;
-// $gray-300: #495057 !default;
-// $gray-400: #6c757d !default;
-// $gray-500: #adb5bd !default;
-// $gray-600: #ced4da !default;
-// $gray-700: #dee2e6 !default;
-// $gray-800: #e9ecef !default;
-// $gray-900: #f8f9fa !default;
-// $black:    #fff !default;
-// END GRAY OVERRIDE
-
-// -----------------------------------------------------------------
-// From variables-dark (Bootstrap 5)
-$body-color:                   $gray-500;
-$body-bg:                      $gray-900;
-$body-emphasis-color:          $gray-100;
-$body-secondary-color:         rgba($body-color, .75);
-$body-secondary-bg:            $gray-800;
-$body-tertiary-color:          rgba($body-color, .5);
-$body-tertiary-bg:             mix($gray-800, $gray-900, 50%);
-$emphasis-color:               $white;
-$border-color:                 $gray-700;
-$border-color-translucent:     rgba($white, .15);
-$headings-color:               #fff;
-// $link-color:                   $blue-300;
-// $link-hover-color:             $blue-200;
-// $code-color:                   $pink-300;
-// END DARK
-// -----------------------------------------------------------------
-
-
 
 // These are part of the stock Atomik theme and are probably too light 
 
