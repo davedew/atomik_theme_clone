@@ -1,6 +1,24 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat:500);
 @import url(//fonts.googleapis.com/css?family=Bebas+Neue:400);
 @import url(//fonts.googleapis.com/css?family=Raleway:800);
+@import url(//fonts.googleapis.com/css?family=Montserrat:500);
+@import url(//fonts.googleapis.com/css?family=Bebas+Neue:400);
+@import url(//fonts.googleapis.com/css?family=Raleway:800);
+@import url(//fonts.googleapis.com/css?family=Montserrat:500);
+@import url(//fonts.googleapis.com/css?family=Bebas+Neue:400);
+@import url(//fonts.googleapis.com/css?family=Raleway:800);
+@import url(//fonts.googleapis.com/css?family=Montserrat:500);
+@import url(//fonts.googleapis.com/css?family=Bebas+Neue:400);
+@import url(//fonts.googleapis.com/css?family=Raleway:800);
+@import url(//fonts.googleapis.com/css?family=Montserrat:500);
+@import url(//fonts.googleapis.com/css?family=Bebas+Neue:400);
+@import url(//fonts.googleapis.com/css?family=Raleway:800);
+@import url(//fonts.googleapis.com/css?family=Montserrat:500);
+@import url(//fonts.googleapis.com/css?family=Bebas+Neue:400);
+@import url(//fonts.googleapis.com/css?family=Raleway:800);
+@import url(//fonts.googleapis.com/css?family=Montserrat:500);
+@import url(//fonts.googleapis.com/css?family=Bebas+Neue:400);
+@import url(//fonts.googleapis.com/css?family=Raleway:800);
 @charset "UTF-8";
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
@@ -56,8 +74,8 @@
   --bs-dark-accent-rgb: 1, 67, 87;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 173, 181, 189;
-  --bs-body-bg-rgb: 33, 37, 41;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -65,12 +83,12 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #adb5bd;
-  --bs-body-bg: #212529;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
   --bs-border-width: 1px;
   --bs-border-style: solid;
-  --bs-border-color: #495057;
-  --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
+  --bs-border-color: #dee2e6;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
   --bs-border-radius: 0.375rem;
   --bs-border-radius-sm: 0.25rem;
   --bs-border-radius-lg: 0.5rem;
@@ -123,7 +141,6 @@ div.theme-atomik div.ccm-block-next-previous .ccm-block-next-previous-next-link,
   font-family: "Raleway";
   font-weight: 800;
   line-height: 1.2;
-  color: #fff;
 }
 
 h1, .h1 {
@@ -594,7 +611,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #212529;
+  background-color: #fff;
   border: 1px solid var(--bs-border-color);
   border-radius: 0.375rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -2017,8 +2034,8 @@ progress {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #adb5bd;
-  background-color: #212529;
+  color: #212529;
+  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -2040,8 +2057,8 @@ progress {
   cursor: pointer;
 }
 .form-control:focus {
-  color: #adb5bd;
-  background-color: #212529;
+  color: #212529;
+  background-color: #fff;
   border-color: #96bde0;
   outline: 0;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 0 0.25rem rgba(45, 122, 192, 0.25);
@@ -2066,7 +2083,7 @@ progress {
   margin: -0.375rem -0.75rem;
   -webkit-margin-end: 0.75rem;
           margin-inline-end: 0.75rem;
-  color: #adb5bd;
+  color: #212529;
   background-color: #e9ecef;
   pointer-events: none;
   border-color: inherit;
@@ -2091,7 +2108,7 @@ progress {
   padding: 0.375rem 0;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #adb5bd;
+  color: #212529;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -2170,8 +2187,8 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #adb5bd;
-  background-color: #212529;
+  color: #212529;
+  background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -2203,7 +2220,7 @@ textarea.form-control-lg {
 }
 .form-select:-moz-focusring {
   color: transparent;
-  text-shadow: 0 0 0 #adb5bd;
+  text-shadow: 0 0 0 #212529;
 }
 
 .form-select-sm {
@@ -2249,7 +2266,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #212529;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -2360,10 +2377,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #212529, 0 0 0 0.25rem rgba(45, 122, 192, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(45, 122, 192, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #212529, 0 0 0 0.25rem rgba(45, 122, 192, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(45, 122, 192, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -2555,7 +2572,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #adb5bd;
+  color: #212529;
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
@@ -2798,7 +2815,7 @@ textarea.form-control-lg {
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
-  --bs-btn-color: #adb5bd;
+  --bs-btn-color: #212529;
   --bs-btn-bg: transparent;
   --bs-btn-border-width: 1px;
   --bs-btn-border-color: transparent;
@@ -3351,7 +3368,7 @@ textarea.form-control-lg {
   --bs-dropdown-padding-y: 0;
   --bs-dropdown-spacer: 0.125rem;
   --bs-dropdown-font-size: 1rem;
-  --bs-dropdown-color: #adb5bd;
+  --bs-dropdown-color: #212529;
   --bs-dropdown-bg: #fff;
   --bs-dropdown-border-color: var(--bs-border-color-translucent);
   --bs-dropdown-border-radius: 0;
@@ -3777,8 +3794,8 @@ textarea.form-control-lg {
   --bs-nav-tabs-border-radius: 0.375rem;
   --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
   --bs-nav-tabs-link-active-color: #495057;
-  --bs-nav-tabs-link-active-bg: #212529;
-  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #212529;
+  --bs-nav-tabs-link-active-bg: #fff;
+  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
 }
 .nav-tabs .nav-link {
@@ -4424,8 +4441,8 @@ div.theme-atomik .ccm-block-topic-list .card > ul.ccm-block-topic-list-list + .c
 }
 
 .accordion {
-  --bs-accordion-color: #adb5bd;
-  --bs-accordion-bg: #212529;
+  --bs-accordion-color: #212529;
+  --bs-accordion-bg: #fff;
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
   --bs-accordion-border-width: 1px;
@@ -4433,9 +4450,9 @@ div.theme-atomik .ccm-block-topic-list .card > ul.ccm-block-topic-list-list + .c
   --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
   --bs-accordion-btn-padding-x: 1.25rem;
   --bs-accordion-btn-padding-y: 1rem;
-  --bs-accordion-btn-color: #adb5bd;
+  --bs-accordion-btn-color: #212529;
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23adb5bd'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
@@ -4912,7 +4929,7 @@ div.theme-atomik .ccm-block-topic-list ul.ccm-block-topic-list-list {
   --bs-list-group-action-color: #495057;
   --bs-list-group-action-hover-color: #495057;
   --bs-list-group-action-hover-bg: #f8f9fa;
-  --bs-list-group-action-active-color: #adb5bd;
+  --bs-list-group-action-active-color: #212529;
   --bs-list-group-action-active-bg: #e9ecef;
   --bs-list-group-disabled-color: #6c757d;
   --bs-list-group-disabled-bg: #fff;
@@ -5819,11 +5836,11 @@ div.theme-atomik .ccm-block-topic-list ul.ccm-block-topic-list-list .list-group-
   --bs-popover-header-padding-x: 1rem;
   --bs-popover-header-padding-y: 0.5rem;
   --bs-popover-header-font-size: 1rem;
-  --bs-popover-header-color: #fff;
+  --bs-popover-header-color: ;
   --bs-popover-header-bg: #f0f0f0;
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: 1rem;
-  --bs-popover-body-color: #adb5bd;
+  --bs-popover-body-color: #212529;
   --bs-popover-arrow-width: 1rem;
   --bs-popover-arrow-height: 0.5rem;
   --bs-popover-arrow-border: var(--bs-popover-border-color);
@@ -12095,7 +12112,7 @@ div.theme-atomik .ccm-board-blog div.ccm-block-next-previous .ccm-block-next-pre
 div.theme-atomik div.ccm-block-next-previous .ccm-board-blog .ccm-block-next-previous-previous-link a,
 div.theme-atomik .ccm-board-blog div.ccm-block-next-previous .ccm-block-next-previous-next-link a,
 div.theme-atomik div.ccm-block-next-previous .ccm-board-blog .ccm-block-next-previous-next-link a {
-  color: #adb5bd;
+  color: #212529;
   transition: color 0.2s linear;
 }
 div.theme-atomik .ccm-board-blog h1 a:hover, div.theme-atomik .ccm-board-blog .h1 a:hover,
@@ -12168,7 +12185,7 @@ div.theme-atomik div.blog-author-byline div.blog-author-byline-author {
 }
 
 div.ccm-page div.ccm-block-top-navigation-bar .navbar {
-  background-color: #f3f3f3;
+  background-color: #00aaff;
 }
 div.ccm-page div.ccm-block-top-navigation-bar .navbar .nav-link {
   transition: all 0.2s;
@@ -13777,7 +13794,7 @@ div.theme-atomik div.ccm-block-hero-image-offset-title div.ccm-block-hero-image-
     position: relative;
     z-index: 2;
     margin-top: -6rem;
-    background-color: #212529;
+    background-color: #fff;
   }
 }
 div.theme-atomik div.ccm-block-hero-image-offset-title div.ccm-block-hero-image-text h1, div.theme-atomik div.ccm-block-hero-image-offset-title div.ccm-block-hero-image-text .h1 {
@@ -14059,7 +14076,7 @@ div.theme-atomik .ccm-image-slider-hero-image-text h1, div.theme-atomik .ccm-ima
   margin-bottom: 0;
 }
 .theme-atomik .ccm-page-profile .ccm-profile-statistics {
-  color: #4c4f56;
+  color: #373A3B;
 }
 
 /* stylelint-disable selector-class-pattern */
@@ -14080,7 +14097,7 @@ div.theme-atomik .ccm-image-slider-hero-image-text h1, div.theme-atomik .ccm-ima
   margin-bottom: 0;
 }
 .theme-atomik .ccm-page-user-directory .ccm-profile-statistics {
-  color: #4c4f56;
+  color: #373A3B;
 }
 
 div.theme-atomik div.ccm-block-autonav {
@@ -14088,7 +14105,7 @@ div.theme-atomik div.ccm-block-autonav {
   border-radius: 3px;
 }
 div.theme-atomik div.ccm-block-autonav .nav-item .nav-link {
-  color: #4c4f56;
+  color: #373A3B;
 }
 div.theme-atomik div.ccm-block-autonav .nav-item .nav-link:hover {
   text-decoration: underline;
@@ -14226,7 +14243,7 @@ div.theme-atomik .ccm-block-testimonial-hero {
   position: relative;
 }
 div.theme-atomik .ccm-block-testimonial-hero .ccm-block-testimonial-hero-cover {
-  background-color: rgba(76, 79, 86, 0.5);
+  background-color: rgba(55, 58, 59, 0.5);
   height: 100%;
   z-index: 2;
   position: absolute;
@@ -14492,7 +14509,7 @@ div.theme-atomik .ccm-block-share-this-page h4, div.theme-atomik .ccm-block-shar
   font-family: "Bebas Neue";
 }
 div.theme-atomik .ccm-block-share-this-page a {
-  color: #4c4f56;
+  color: #373A3B;
   background-color: #F3F3F3;
 }
 div.theme-atomik .ccm-block-share-this-page a:hover {
