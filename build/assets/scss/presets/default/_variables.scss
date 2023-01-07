@@ -28,20 +28,20 @@ $black:    #000 !default;
 
 // -----------------------------------------------------------------
 // From variables-dark (Bootstrap 5)
-$body-color:                   $gray-500 !default;
-$body-bg:                      $gray-900 !default;
-$body-emphasis-color:          $gray-100 !default;
-$body-secondary-color:         rgba($body-color, .75) !default;
-$body-secondary-bg:            $gray-800 !default;
-$body-tertiary-color:          rgba($body-color, .5) !default;
-$body-tertiary-bg:             mix($gray-800, $gray-900, 50%) !default;
-$emphasis-color:               $white !default;
-$border-color:                 $gray-700 !default;
-$border-color-translucent:     rgba($white, .15) !default;
-$headings-color:               #fff !default;
-// $link-color:                   $blue-300 !default;
-// $link-hover-color:             $blue-200 !default;
-// $code-color:                   $pink-300 !default;
+$body-color:                   $gray-500;
+$body-bg:                      $gray-900;
+$body-emphasis-color:          $gray-100;
+$body-secondary-color:         rgba($body-color, .75);
+$body-secondary-bg:            $gray-800;
+$body-tertiary-color:          rgba($body-color, .5);
+$body-tertiary-bg:             mix($gray-800, $gray-900, 50%);
+$emphasis-color:               $white;
+$border-color:                 $gray-700;
+$border-color-translucent:     rgba($white, .15);
+$headings-color:               #fff;
+// $link-color:                   $blue-300;
+// $link-hover-color:             $blue-200;
+// $code-color:                   $pink-300;
 // END DARK
 // -----------------------------------------------------------------
 
